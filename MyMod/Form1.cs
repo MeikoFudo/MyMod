@@ -27,7 +27,7 @@ namespace MyMod
         {
             if (textBoxInput.Text != "")
                 if (int.TryParse(textBoxInput.Text, out _))
-                    textBoxShow.Text = "4k" + "+" +(int.Parse(textBoxInput.Text) % 4);
+                    textBoxShow.Text = "4k +" +(int.Parse(textBoxInput.Text) % 4);
                 else
                     MessageBox.Show("Введите число");
             else
